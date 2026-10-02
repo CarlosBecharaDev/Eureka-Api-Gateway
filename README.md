@@ -53,4 +53,4 @@ curl http://localhost:9056/cliente
 4. API Gateway consulta Eureka → obtiene instancias de `USER-SERVICE`
 5. Balancea carga y reenvía la petición al User Service
 
-By: Frida Martina Ariosa Arias & Carlos Mario Bechara Arias.
+By: Frida Martina Ariosa Arias & Carlos Mario Bechara Arias

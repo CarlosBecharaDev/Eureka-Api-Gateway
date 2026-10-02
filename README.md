@@ -41,8 +41,8 @@ mvn spring-boot:run
 
 ```bash
 # A través del API Gateway (enrutamiento dinámico)
-curl http://localhost:9056/client
-# Respuesta: "Welcome to client"
+curl http://localhost:9056/cliente
+# Respuesta: "Bienvenido al cliente"
 ```
 
 ## Funcionamiento
@@ -53,9 +53,4 @@ curl http://localhost:9056/client
 4. API Gateway consulta Eureka → obtiene instancias de `USER-SERVICE`
 5. Balancea carga y reenvía la petición al User Service
 
-
-## Build
-
-```bash
-mvn clean compile -DskipTests
-```
+By: Frida Martina Ariosa Arias & Carlos Mario Bechara Arias.

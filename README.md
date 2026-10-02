@@ -53,4 +53,51 @@ curl http://localhost:9056/cliente
 4. API Gateway consulta Eureka → obtiene instancias de `USER-SERVICE`
 5. Balancea carga y reenvía la petición al User Service
 
+## Evidencias (Capturas)
+
+### 1. Dashboard Eureka - Servicios Registrados
+![Dashboard Eureka](docs/images/01-eureka-dashboard.png)
+*Dashboard en http://localhost:9099 mostrando API-GATEWAY y USER-SERVICE con estado UP*
+
+### 2. Consola Eureka Server
+![Consola Eureka](docs/images/02-eureka-server-console.png)
+*Inicio en puerto 9099*
+
+### 3. Consola User Service - Registro en Eureka
+![Consola User Service](docs/images/03-user-service-console.png)
+*Log: "Registered with Eureka: USER-SERVICE" + puerto 8086*
+
+### 4. Consola API Gateway - Descubrimiento
+![Consola API Gateway](docs/images/04-api-gateway-console.png)
+*Log: "discovered 1 instances" + puerto 9056*
+
+### 5. Prueba Gateway (Postman)
+![Postman Gateway](docs/images/05-postman-gateway.png)
+*GET http://localhost:9056/cliente → "Bienvenido al cliente"*
+
+### 6. Prueba Directa User Service (Postman)
+![Postman Direct](docs/images/06-postman-direct.png)
+*GET http://localhost:8086/cliente → "Bienvenido al cliente"*
+
+### 7. Eureka API REST
+![Eureka API](docs/images/07-eureka-api.png)
+*GET http://localhost:9099/eureka/apps → JSON con ambos servicios*
+
+---
+
+## Cómo agregar las capturas
+
+1. Crea la carpeta: `mkdir -p docs/images`
+2. Guarda tus capturas como:
+   - `01-eureka-dashboard.png`
+   - `02-eureka-server-console.png`
+   - `03-user-service-console.png`
+   - `04-api-gateway-console.png`
+   - `05-postman-gateway.png`
+   - `06-postman-direct.png`
+   - `07-eureka-api.png`
+3. Haz commit y push
+
+---
+
 By: Frida Martina Ariosa Arias & Carlos Mario Bechara Arias

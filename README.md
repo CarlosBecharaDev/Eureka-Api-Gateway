@@ -85,19 +85,4 @@ curl http://localhost:9056/cliente
 
 ---
 
-## Cómo agregar las capturas
-
-1. Crea la carpeta: `mkdir -p docs/images`
-2. Guarda tus capturas como:
-   - `01-eureka-dashboard.png`
-   - `02-eureka-server-console.png`
-   - `03-user-service-console.png`
-   - `04-api-gateway-console.png`
-   - `05-postman-gateway.png`
-   - `06-postman-direct.png`
-   - `07-eureka-api.png`
-3. Haz commit y push
-
----
-
 By: Frida Martina Ariosa Arias & Carlos Mario Bechara Arias
